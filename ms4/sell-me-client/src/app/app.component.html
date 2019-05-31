@@ -1,0 +1,21 @@
+<div class="container">
+  <h1>Welcome to my app</h1>
+
+  <div class="card" *ngIf="!isAuthenticated">
+    <div class="card-header">
+      Login
+    </div>
+    <div class="card-body">
+      <app-login></app-login>
+    </div>
+  </div>
+  <!--TODO include authentication logic-->
+  <!--<div class="card" *ngIf="advertisements">-->
+    <!--<div class="card-header">-->
+      <!--Advertisements-->
+    <!--</div>-->
+    <!--<div class="card-body">-->
+      <!--<app-advertisement-list [advertisements]="advertisements | async"></app-advertisement-list>-->
+    <!--</div>-->
+  <!--</div>-->
+</div>
